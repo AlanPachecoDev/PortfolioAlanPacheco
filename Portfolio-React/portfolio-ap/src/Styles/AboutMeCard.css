@@ -1,0 +1,168 @@
+
+/* ABOUT ME */
+#closeAboutMeButton{
+    position: absolute;
+  
+    right:0.5em;
+    top:0.5em;
+    
+    width: 8vw;
+    height: 8vw;
+    
+    padding: 0;
+  
+    background: none;
+    border-style: none;
+  }
+  
+  #closeAboutmeIcon{
+    width:100%;
+    height: 100%;
+  }
+  
+  #closeAboutmeIcon path{
+    fill:rgb(100, 24, 24);
+  }
+  
+  
+  .aboutMeCard{
+    display: flex;
+    justify-content: center;
+  
+    position: absolute;
+    z-index: 7;
+  
+    top:12vh;
+  
+    width:90vw;
+    height: 200vw;
+  
+    background-color: #172030;
+  
+    box-shadow: 0px 0px 0px rgb(25, 168, 200);
+    animation: blurAnimation 5s linear infinite;
+  
+    overflow: hidden;
+
+    left:50%;
+    transform: translate(-50%, 0%);
+  }
+  
+  @keyframes blurAnimation {
+    0%{
+      box-shadow: 0px 0px 0px rgb(25, 168, 200);
+    }
+    50%{
+      box-shadow: 0px 0px 5px rgb(25, 168, 200);
+    }
+  }
+  
+  .aboutMePhoto{
+    position: absolute;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    overflow: hidden;
+  
+    margin-top: 5%;
+    width: 28vw;
+    height: 28vw;
+  
+    border-radius: 100%;
+    border: .3vw solid rgb(54, 154, 161);
+  
+  }
+  
+  .photoContainer{
+    width: 29vw;
+    height: 28.5vw;
+  }
+  
+  #photoAlan{
+    width: 100%; 
+    height: 100%;
+  }
+  
+  .aboutMeCard h1, .aboutMeCard h2{
+    position: absolute;
+    text-align: center;
+    
+    top:33vw;
+  
+    font-size: 1.2em;
+  }
+  
+  #h2SoftwareDeveloper{
+    font-family: 'Merriweather', serif;
+    font-size: 0.8em;
+    top:41vw;
+  }
+  
+  .technologiesIcons{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+    margin-top: 60%;
+  
+    width:100vw;
+    height: 10vw;
+  }
+  
+  .socialMediaIcons{ 
+    width: 10vw;
+    height: 10vw;
+  }
+  
+  .socialMediaIcons g, .socialMediaIcons path{
+    fill:rgb(6, 141, 208);
+  }
+  
+  .as{
+    margin: 0 3%; 
+  }
+  
+  .lineAboutMe{
+    position: absolute;
+    display: flex;
+    
+    border:2px dashed rgb(54, 154, 161);
+    border-style: dashed;
+  
+    top: 35%;
+    /* background-color: rgb(54, 154, 161); */
+    width:100vw;
+    height: 130vw;
+  }
+  
+  
+  /* PERSONAL DATA */
+  .personalData{
+    /* display: flex; */
+    position: absolute;
+    top: 37%;
+  
+    width:90%;
+    height:min-content;
+    flex-direction: column;
+  }
+  
+  .informationContainers{
+    width:100%;
+    height: fit-content;
+    /* height:33.33%; */
+    margin-top:10%;
+  }
+  
+  .informationContainers h2{
+    position: inherit;
+    text-align: left;
+  }
+  
+  .informationContainers p{
+    color: #a4a4a4;
+    text-align: justify;
+  }
+  

@@ -1,0 +1,171 @@
+.leftBar{
+    position:fixed;
+    /* Horizontal alignment to the icons */
+    display: flex;
+    justify-content: center;
+    /* Vertical alignment to the icons */
+    align-items: center;
+    
+    top:0;
+    left:0;
+    /* ---- */
+    width:100vw;
+    height: 10vh;
+    /* border:1px solid; */
+    background-color: #090c11;
+    
+    z-index: 7;
+    opacity: 0.99;
+}
+
+#projectsContainer, #contactContainer, #technologiesContainer {
+    margin-left: 10vw;
+}
+
+
+.navIcons{
+    width: 10vw;
+    height: 10vw;
+}
+
+#projectIcon{
+    width: 11vw;
+    height: 11vw;
+}
+
+.navIcons g{
+    fill:rgb(6, 141, 208);
+}
+
+/* Allows to change the color of the svg icons */
+#homeIcon:hover g, #projectIcon:hover g, #contactIcon:hover g, #technologiesIcon:hover g{
+    fill:rgb(17, 146, 152)
+}
+
+/* TAG ICONS */
+
+.tagIcons{
+    /* position:absolute;  */
+    display: none;
+    background-color: #0f131a;
+    text-decoration: none;
+    color:#fff;
+
+    width:5vw;
+
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15%;
+}
+
+/* Allows to all the objects (icon and tag in pairs) to keep your position */
+#homeContainer:hover, #projectsContainer:hover, #contactContainer:hover, #technologiesContainer:hover{
+    transform: translateX(35%);
+
+}
+
+/* Makes appear the tag of the according icon */
+#homeContainer:hover #homeTag{
+    display:flex;
+    animation: tagsToRight 0.5s linear;  
+    transform: translateX(10px);
+}
+
+#projectsContainer:hover #projectsTag{
+    display:flex;
+    animation: tagsToRight 0.5s linear;  
+    transform: translateX(10px);
+}
+
+#contactContainer:hover #contactTag{
+    display:flex;
+    animation: tagsToRight 0.5s linear;  
+    transform: translateX(10px);
+}
+
+#technologiesContainer:hover #technologiesTag{
+    display:flex;
+    animation: tagsToRight 0.5s linear;  
+    transform: translateX(10px);
+}
+
+@keyframes tagsToRight {
+    0%{
+        transform: translateX(10px);
+    }
+    1%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(10px);
+    }
+}
+
+/*Allow to the icons to run the according animation to left*/
+#homeContainer:hover #homeIcon{
+    animation: iconsToLeft 0.5s linear; 
+}
+
+#projectsContainer:hover #projectIcon{
+    animation: iconsToLeft 0.5s linear; 
+}
+
+#contactContainer:hover #contactIcon{
+    animation: iconsToLeft 0.5s linear; 
+    
+}
+
+#technologiesContainer:hover #technologiesIcon{
+    animation: iconsToLeft 0.5s linear; 
+}
+
+@keyframes iconsToLeft {
+    50%{
+        transform: translateX(-2px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+/* MEDIA QUERIES */
+/* Para cambiar tamaño en dispositivos de escritorio */
+
+/* //500 */
+@media (min-width: 1024px) {
+    .leftBar{
+        background-color: unset;
+
+        flex-direction: column;
+        
+        left:2%;
+
+        width:5vw;
+        height: 100vh;
+        
+        z-index: 7;
+        opacity: 0.99;
+    }
+
+    #projectsContainer, #contactContainer, #technologiesContainer {
+        margin-left: 0vw;
+    }
+
+    #projectsContainer, #contactContainer, #technologiesContainer, #homeContainer {
+        margin: 30%;
+    }
+
+    .navIcons{
+        width: 3vw;
+        height: 3vw;
+    }
+    
+    #projectIcon{
+        width: 3vw;
+        height: 3vw;
+    } 
+}
+
+

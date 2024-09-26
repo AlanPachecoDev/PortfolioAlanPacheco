@@ -1,0 +1,288 @@
+body{
+  background-color: #151b25;
+  color: white;
+  z-index: 4;
+}
+
+.bodyContainer{
+  width: 100vw;
+  height: 76.6vh;
+  padding-top: 10vh;
+}
+
+.homeContent{
+  height: 90vh;
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-top: 50%; */
+  flex-direction: column;
+}
+
+#h1AlanPacheco{
+  font-family: 'Merriweather', serif;
+}
+
+/* ABOUT ME */
+#closeAboutMeButton{
+  position: absolute;
+
+  right:0.5em;
+  top:0.5em;
+  
+  width: 8vw;
+  height: 8vw;
+  
+  padding: 0;
+
+  background: none;
+  border-style: none;
+}
+
+#closeAboutmeIcon{
+  width:100%;
+  height: 100%;
+}
+
+#closeAboutmeIcon path{
+  fill:rgb(100, 24, 24);
+}
+
+#aboutMeButton{
+  
+  border-style: none;
+  border:1px solid rgb(6, 141, 208);
+  background-color: #151b25;
+  color: #fff;
+
+  padding: 3%;
+  border-radius: 0.4em;
+  font-family: "Open Sans",sans-serif;
+}
+
+.aboutMeCard{
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+
+  position: absolute;
+  z-index: 7;
+
+  top:12vh;
+
+  width:90vw;
+  height: 200vw;
+
+  background-color: #172030;
+
+  box-shadow: 0px 0px 0px rgb(25, 168, 200);
+  animation: blurAnimation 5s linear infinite;
+
+  overflow: hidden;
+}
+
+@keyframes blurAnimation {
+  0%{
+    box-shadow: 0px 0px 0px rgb(25, 168, 200);
+  }
+  50%{
+    box-shadow: 0px 0px 5px rgb(25, 168, 200);
+  }
+}
+
+.aboutMePhoto{
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  margin-top: 5%;
+  width: 28vw;
+  height: 28vw;
+
+  border-radius: 100%;
+  border: .3vw solid rgb(54, 154, 161);
+
+}
+
+.photoContainer{
+  width: 29vw;
+  height: 28.5vw;
+}
+
+#photoAlan{
+  width: 100%; 
+  height: 100%;
+}
+
+.aboutMeCard h1, .aboutMeCard h2{
+  position: absolute;
+  text-align: center;
+  
+  top:33vw;
+
+  font-size: 1.2em;
+}
+
+#h2SoftwareDeveloper{
+  font-family: 'Merriweather', serif;
+  font-size: 0.8em;
+  top:41vw;
+}
+
+.technologiesIcons{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  
+  margin-top: 60%;
+
+  width:100vw;
+  height: 10vw;
+}
+
+.socialMediaIcons{ 
+  width: 10vw;
+  height: 10vw;
+}
+
+.socialMediaIcons g, .socialMediaIcons path{
+  fill:rgb(6, 141, 208);
+}
+
+.as{
+  margin: 0 3%; 
+}
+
+.lineAboutMe{
+  position: absolute;
+  display: flex;
+  
+  border:2px dashed rgb(54, 154, 161);
+  border-style: dashed;
+
+  top: 35%;
+  /* background-color: rgb(54, 154, 161); */
+  width:100vw;
+  height: 130vw;
+}
+
+
+/* PERSONAL DATA */
+.personalData{
+  /* display: flex; */
+  position: absolute;
+  top: 37%;
+
+  width:90%;
+  height:min-content;
+  flex-direction: column;
+}
+
+.informationContainers{
+  width:100%;
+  height: fit-content;
+  /* height:33.33%; */
+  margin-top:10%;
+}
+
+.informationContainers h2{
+  position: inherit;
+  text-align: left;
+}
+
+.informationContainers p{
+  color: #a4a4a4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Technologies */
+.technologiesContent{
+  /* background-color: rgb(184, 36, 36); */
+  width: 100vw;
+  height:100vh;
+}
+
+#h2Technologies{
+  padding-top: 22vw;
+  margin-bottom:18vw;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+.iconsContainer{
+  width:100%;
+  height:fit-content;
+  /* Para centrar */
+  /* display: none; */
+
+  /* display: flex; 
+  justify-content: center; */
+
+  background-color: #292B2D;
+  
+  display: grid;
+
+  gap:1rem;
+  grid-auto-rows:auto;
+
+  grid-template-columns: repeat( auto-fill, minmax(min(100%,19vw), 1fr)); 
+  /*auto auto auto; */
+  /* column-gap:10%; */
+  
+
+  /*Esto sirve para poner cuadros del grid que ocupen dos casillas y que el resto se re-ordene
+  sin dejar espacios en blanco*/
+  /* grid-auto-flow: dense; */
+}
+
+.icons{
+  /* background-color: rgb(211, 18, 143); */
+  display: flex;
+  align-items: center;
+  /* width:20%;
+  height: 20%; */
+  /* display: inline-block;
+  margin: 4vh 5vw; */
+}
+
+.iconImg{
+  /* background-color: wheat; */
+  /* width:4.8vw;
+  height:5vw;
+  
+  min-width: 40px;
+  min-height:42px; */
+  width:100%;
+}
+
+#javaIcon{
+  padding:5%;
+  background-color: white;
+  border-radius: 100%;
+  width:fit-content;
+  height:fit-content;
+}
+
+.iconImg:hover{
+  border-radius: 10%;
+  background-color: rgb(6, 141, 208);
+}
